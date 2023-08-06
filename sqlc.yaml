@@ -1,0 +1,12 @@
+version: "2"
+packages:
+  - name: "db"
+  - 
+sql:
+  - engine: "postgresql"
+    queries: "query.sql"
+    schema: "schema.sql"
+    gen:
+      go:
+        package: "tutorial"
+        out: "tutorial"
