@@ -1,12 +1,9 @@
-version: "2"
-packages:
-  - name: "db"
-  - 
+version: '2'
 sql:
-  - engine: "postgresql"
-    queries: "query.sql"
-    schema: "schema.sql"
+  - engine: 'postgresql'
+    queries: './db/query/'
+    schema: './db/migration/'
     gen:
       go:
-        package: "tutorial"
-        out: "tutorial"
+        package: 'db'
+        out: 'simple_bank'
